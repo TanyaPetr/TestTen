@@ -9,13 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage extends AbstractPage{
     private final String BASE_URL = "https://tut.by";
 
-    @FindBy(linkText = "Войти")
+    @FindBy(linkText = "Р’РѕР№С‚Рё")
     private WebElement enter;
     @FindBy(name = "login")
     private WebElement login;
     @FindBy(name = "password")
     private WebElement pasword;
-    @FindBy(linkText = "Выйти")
+    @FindBy(linkText = "Р’С‹Р№С‚Рё")
     private WebElement out;
     @FindBy(css = "input.button.auth__enter")
     private WebElement signin;

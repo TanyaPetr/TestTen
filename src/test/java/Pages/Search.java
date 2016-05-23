@@ -24,7 +24,7 @@ public class Search extends AbstractPage{
     private WebElement age_from;
     @FindBy(linkText = "Nissan Teana")
     private WebElement modelauto;
-    @FindBy(xpath = "(//a[contains(text(),'Характеристики')])[2]")
+    @FindBy(xpath = "(//a[contains(text(),'РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё')])[2]")
     private WebElement chapt;
     @FindBy(css = "div.b-search-note")
     private WebElement search_note;

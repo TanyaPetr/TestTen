@@ -9,7 +9,7 @@ public class AutoTests {
     private Steps steps;
     private final String USERNAME = "automation_test";
     private final String PASSWORD = "automation_test1";
-    private final String SEARCHWORLD = "концерт";
+    private final String SEARCHWORLD = "РєРѕРЅС†РµСЂС‚";
     private final String SUMMA = "10000000";
     private final String PUBL = "12";
     private final String TEXT = "TEST NG";
@@ -17,9 +17,9 @@ public class AutoTests {
     private final String EMAIL = "automation_test@tut.by";
     private final String MARK = "Nissan";
     private final String MODEL = "Teana";
-    private final String YEAR = "До 4 лет";
+    private final String YEAR = "Р”Рѕ 4 Р»РµС‚";
     private final String USD = "USD";
-    private final String PAYMENTS = "Ежеквартальная";
+    private final String PAYMENTS = "Р•Р¶РµРєРІР°СЂС‚Р°Р»СЊРЅР°СЏ";
     private final String SUPPLEMENT = "1000";
 
     @BeforeMethod(description = "Init Browser")
@@ -28,64 +28,64 @@ public class AutoTests {
         steps.initBrowser();
     }
 
-    //вход
+    //РІС…РѕРґ
     @Test(description = "Login to TUT.BY")
     public void logintut() {
         steps.logintut(USERNAME, PASSWORD);
         Assert.assertTrue(steps.isloggedin());
     }
-    //выход
+    //РІС‹С…РѕРґ
     @Test(description = "LogOut to TUT.BY")
     public void logouttut(){
         steps.logouttut(USERNAME, PASSWORD);
         Assert.assertTrue(steps.isloggedout());
     }
-    //поиск
+    //РїРѕРёСЃРє
     @Test(description = "Search TUT.BY")
     public void searchtut(){
         steps.searchtut(SEARCHWORLD);
         Assert.assertTrue(steps.issearched());
     }
-    //опрос
+    //РѕРїСЂРѕСЃ
     @Test(description = "Quiz TUT.BY")
     public void quiztut(){
         steps.quiztut();
         Assert.assertTrue(steps.isquized());
     }
 
-    //кредитный калькулятор
+    //РєСЂРµРґРёС‚РЅС‹Р№ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ
     @Test(description = "Calc TUT.BY")
     public void calctut(){
         steps.calctut(SUMMA,PUBL);
         Assert.assertTrue(steps.iscalc());
     }
 
-    //отзыв
+    //РѕС‚Р·С‹РІ
     @Test(description = "Recall TUT.BY")
     public void recalltut(){
         steps.recalltut(USERNAME,PASSWORD,TEXT);
         Assert.assertTrue(steps.isrecall());
     }
-    //отправить новость в редакцию
+    //РѕС‚РїСЂР°РІРёС‚СЊ РЅРѕРІРѕСЃС‚СЊ РІ СЂРµРґР°РєС†РёСЋ
     @Test(description = "SendNews TUT.BY")
     public void sendnews(){
         steps.sendnewstut(USERNAME,CALL,EMAIL,TEXT);
         Assert.assertTrue(steps.issendnews());
     }
-    //поиск авто
+    //РїРѕРёСЃРє Р°РІС‚Рѕ
     @Test(description = "SearchAuto TUT.BY")
     public void searchautotut(){
         steps.searchautotut(MARK,MODEL,YEAR);
         Assert.assertTrue(steps.issearchauto());
     }
 
-    //Сравнение депозитов
+    //РЎСЂР°РІРЅРµРЅРёРµ РґРµРїРѕР·РёС‚РѕРІ
     @Test(description = "ComparisonDeposits TUT.BY")
     public void comparisondepositstut(){
         steps.comparisondepositstut(SUMMA,USD,PAYMENTS,PUBL,SUPPLEMENT);
         Assert.assertTrue(steps.iscomparisondeposits());
     }
-    //калькулятор когда я стану миллионером
+    //РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ РєРѕРіРґР° СЏ СЃС‚Р°РЅСѓ РјРёР»Р»РёРѕРЅРµСЂРѕРј
     @Test(description = "CalcMillion TUT.BY")
     public void calcmilliontut(){
         steps.calcmilliontut(SUMMA,USD,PUBL,SUPPLEMENT);

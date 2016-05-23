@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Calc extends AbstractPage{
     private final String BASE_URL = "http://finance.tut.by/calcs/kredit";
-    private final String everymounthpayment = "Ежемесячный платеж:";
+    private final String everymounthpayment = "Р•Р¶РµРјРµСЃСЏС‡РЅС‹Р№ РїР»Р°С‚РµР¶:";
     private final String procent = "12";
 
     @FindBy(name = "summa_cred")

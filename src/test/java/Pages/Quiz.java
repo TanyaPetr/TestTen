@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Quiz extends AbstractPage{
     private final String BASE_URL = "https://tut.by";
-    private final String ifcontents = "голос";
+    private final String ifcontents = "РіРѕР»РѕСЃ";
 
 
     @FindBy(id = "aid14927")
@@ -36,7 +36,7 @@ public class Quiz extends AbstractPage{
         quiz.click();
         send.click();
     }
-    //true если проголосовал успешно либо уже голосовал
+    //true РµСЃР»Рё РїСЂРѕРіРѕР»РѕСЃРѕРІР°Р» СѓСЃРїРµС€РЅРѕ Р»РёР±Рѕ СѓР¶Рµ РіРѕР»РѕСЃРѕРІР°Р»
     public boolean isquiz(){
         return  quiztrue.getText().contains(ifcontents);
     }

@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Recall extends AbstractPage{
     private final String BASE_URL = "http://finance.tut.by/banks/alfa";
-    private final String contentcomments = "Комментарий получен, он отобразится после проверки модератором";
+    private final String contentcomments = "РљРѕРјРјРµРЅС‚Р°СЂРёР№ РїРѕР»СѓС‡РµРЅ, РѕРЅ РѕС‚РѕР±СЂР°Р·РёС‚СЃСЏ РїРѕСЃР»Рµ РїСЂРѕРІРµСЂРєРё РјРѕРґРµСЂР°С‚РѕСЂРѕРј";
 
 
-    @FindBy(linkText = "Вход")
+    @FindBy(linkText = "Р’С…РѕРґ")
     private WebElement enter;
     @FindBy(name = "comment")
     private WebElement comment;
