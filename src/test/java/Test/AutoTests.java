@@ -68,7 +68,7 @@ public class AutoTests {
     }
     //отправить новость в редакцию
     @Test(description = "SendNews TUT.BY")
-    public void sendnews(){
+    public void sendnews() throws InterruptedException {
         steps.sendnewstut(USERNAME,CALL,EMAIL,TEXT);
         Assert.assertTrue(steps.issendnews());
     }

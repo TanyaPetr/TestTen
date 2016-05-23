@@ -8,8 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SendNews extends AbstractPage{
     private final String BASE_URL = "http://auto.tut.by/tell_news";
-    private final String newsadd = "Спасибо, ваша новость была успешно отправлена";
-
 
     @FindBy(name = "unews_name")
     private WebElement unewsname;
@@ -37,8 +35,7 @@ public class SendNews extends AbstractPage{
         driver.navigate().to(URL);
     }
 
-    public void sendnews(String name,String call,String email,String text)
-    {
+    public void sendnews(String name,String call,String email,String text) throws InterruptedException {
         unewsname.clear();
         unewsname.sendKeys(name);
         unewsphone.clear();
@@ -50,9 +47,10 @@ public class SendNews extends AbstractPage{
         unewswitnessname.clear();
         unewswitnessname.sendKeys(text);
         sbmbutton.click();
+        Thread.sleep(3000);
     }
 
     public boolean issendnews(){
-        return  b_success.getText().contains(newsadd);
+        return  b_success.isDisplayed();
     }
 }

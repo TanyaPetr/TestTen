@@ -11,7 +11,7 @@ public class Quiz extends AbstractPage{
     private final String ifcontents = "голос";
 
 
-    @FindBy(id = "aid14927")
+    @FindBy(id = "aid14941")
     private WebElement quiz;
 
     @FindBy(name = "send")

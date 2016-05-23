@@ -91,7 +91,7 @@ public class Steps {
         return (recall.isrecall());
     }
 
-    public void sendnewstut(String name,String call,String email,String text){
+    public void sendnewstut(String name,String call,String email,String text) throws InterruptedException {
         SendNews sendNews = new SendNews(driver);
         sendNews.openPage("http://auto.tut.by/tell_news");
         sendNews.sendnews(name,call,email,text);
