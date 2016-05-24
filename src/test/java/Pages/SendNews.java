@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SendNews extends AbstractPage{
-    private final String BASE_URL = "http://auto.tut.by/tell_news";
 
     @FindBy(name = "unews_name")
     private WebElement unewsname;

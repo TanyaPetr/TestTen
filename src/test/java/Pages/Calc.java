@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class Calc extends AbstractPage{
-    private final String BASE_URL = "http://finance.tut.by/calcs/kredit";
     private final String everymounthpayment = "Ежемесячный платеж:";
     private final String procent = "12";
 

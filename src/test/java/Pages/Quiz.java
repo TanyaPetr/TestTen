@@ -7,9 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Quiz extends AbstractPage{
-    private final String BASE_URL = "https://tut.by";
     private final String ifcontents = "голос";
-
 
     @FindBy(id = "aid14941")
     private WebElement quiz;

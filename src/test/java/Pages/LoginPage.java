@@ -7,8 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends AbstractPage{
-    private final String BASE_URL = "https://tut.by";
-
     @FindBy(linkText = "Войти")
     private WebElement enter;
     @FindBy(name = "login")

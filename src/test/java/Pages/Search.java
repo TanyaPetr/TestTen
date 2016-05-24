@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class Search extends AbstractPage{
-    private final String BASE_URL = "https://tut.by";
 
     @FindBy(id = "search_from_str")
     private WebElement searchfromstr;

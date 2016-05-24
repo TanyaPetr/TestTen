@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Recall extends AbstractPage{
-    private final String BASE_URL = "http://finance.tut.by/banks/alfa";
     private final String contentcomments = "Комментарий получен, он отобразится после проверки модератором";
 
 
