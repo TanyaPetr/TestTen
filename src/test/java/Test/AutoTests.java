@@ -1,5 +1,6 @@
 package Test;
 
+import org.junit.After;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -27,7 +28,10 @@ public class AutoTests {
         steps=new Steps();
         steps.initBrowser();
     }
-
+    @After
+    public void tearDown() throws Exception {
+     steps.closeBrowser();
+    }
     //вход
     @Test(description = "Login to TUT.BY")
     public void logintut() {
