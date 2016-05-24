@@ -2,7 +2,6 @@ package Steps;
 import Pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import java.util.concurrent.TimeUnit;
 
 
@@ -16,6 +15,10 @@ public class Steps {
         driver = new FirefoxDriver();
         driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+    }
+    public void closeBrowser()
+    {
+        driver.quit();
     }
 
 
@@ -88,7 +91,7 @@ public class Steps {
     public boolean isrecall()
     {
         Recall recall = new Recall(driver);
-        return (recall.isrecall());
+        return recall.isrecall();
     }
 
     public void sendnewstut(String name,String call,String email,String text) throws InterruptedException {
